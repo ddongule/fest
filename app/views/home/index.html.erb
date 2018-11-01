@@ -1,36 +1,39 @@
 <div class="title">
   <%= image_tag  ("bigtownbudget.png"), class: 'image' %>
 </div>
-  <%#= image_tag ("people.png"),  style: 'height:450px; width:auto;' %>
 
-<select onchange="categoryChange(this)">
-  <option value="0">시·도 선택</option>
-  <option value="1">서울</option>
-  <option value="2">부산</option>
-  <option value="3">대구</option>
-  <option value="4">인천</option>
-  <option value="5">광주</option>
-  <option value="6">대전</option>
-  <option value="7">울산</option>
-  <option value="8">경기</option>
-  <option value="9">강원</option>
-  <option value="10">충북</option>
-  <option value="11">충남</option>
-  <option value="12">전북</option>
-  <option value="13">전남</option>
-  <option value="14">경북</option>
-  <option value="15">경남</option>
-</select>
+
+<div class="center">
+  <p>우리 동네의 이슈들과 우리 동네의 예산 블라블라</p><br><br>
+  <p class="search-town">우리 동네 검색해보기</p>
+  <select onchange="categoryChange(this)">
+    <option value="0">시·도 선택</option>
+    <option value="1">서울</option>
+    <option value="2">부산</option>
+    <option value="3">대구</option>
+    <option value="4">인천</option>
+    <option value="5">광주</option>
+    <option value="6">대전</option>
+    <option value="7">울산</option>
+    <option value="8">경기</option>
+    <option value="9">강원</option>
+    <option value="10">충북</option>
+    <option value="11">충남</option>
+    <option value="12">전북</option>
+    <option value="13">전남</option>
+    <option value="14">경북</option>
+    <option value="15">경남</option>
+  </select>
  
 
-<select id="sigungu">
-  <option>시.군.구 선택</option>
-</select>
+  <select id="sigungu">
+    <option selected>시.군.구 선택</option>
+  </select>
 
-<select id="">
-
-</select>
-
+  <select id="">
+    <option selected>선택</option>
+  </select>
+</div>
 <script>
   function categoryChange(e) {
     var seoul = ['강남구', '강동구', '강북구', '강서구', '관악구', '광진구', '구로구', '금천구', '노원구',
