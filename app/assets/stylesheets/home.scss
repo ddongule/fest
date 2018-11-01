@@ -4,3 +4,23 @@
 .title{
   text-align: center;
 }
+.image {
+  width: 700px;
+}
+@media only screen and (max-width: 1024px){
+  .image {
+      width: 500px;
+      height: auto;
+      background-size: 100%;
+      margin: 0 auto 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+  .image {
+      width: 350px;
+      height: auto;
+      background-size: 100%;
+      margin: 0 auto 10px;
+    }
+}
